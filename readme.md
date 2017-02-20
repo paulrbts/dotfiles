@@ -1,8 +1,8 @@
 # How to set up a Mac system from fresh
-Based largely on [Dries Vints' dotfiles repo](https://github.com/driesvints/dotfiles).
+Based largely, but not exclusively, on [Dries Vints' dotfiles repo](https://github.com/driesvints/dotfiles).
+Other sources may have been lost over hours on $SEARCH-ENGINE -- apologies to those authors
 
 ## A Fresh macOS Setup
-
 Follow these install instructions to setup a brand new Mac.
 
 1. Update macOS to the latest version with the App Store
@@ -19,7 +19,6 @@ Follow these install instructions to setup a brand new Mac.
 Your Mac is now ready to use!
 
 ## Your Own Dotfiles
-
 If you want to start your own dotfiles from this setup, it's pretty easy to do so. First of all you'll need to fork this repo. After that you can tweak it the way you want.
 
 Go through the [`.macos`](./.macos) file and adjust the settings to your liking. You can find much more settings at [the original script by Mathias Bynens](https://github.com/mathiasbynens/dotfiles/blob/master/.macos) and [Kevin Suttle's macOS Defaults project](https://github.com/kevinSuttle/MacOS-Defaults).
@@ -45,11 +44,3 @@ mackup backup
 ```
 
 You can tweak the shell theme, the Oh My Zsh settings and much more. Go through the files in this repo and tweak everything to your liking.
-
-Enjoy your own Dotfiles!
-
-## Thanks To...
-
-I first got the idea for starting this project by visiting the [Github does dotfiles](https://dotfiles.github.io/) project. Both [Zach Holman](https://github.com/holman/dotfiles) and [Mathias Bynens](https://github.com/mathiasbynens/dotfiles) were great sources of inspiration. [Sourabh Bajaj](https://twitter.com/sb2nov/)'s [Mac OS X Setup Guide](http://sourabhbajaj.com/mac-setup/) proved to be invaluable. Thanks to [Taylor Otwell](https://twitter.com/taylorotwell) for his awesome Zsh theme! And lastly, I'd like to thank [Maxime Fabre](https://twitter.com/anahkiasen) for [his excellent presentation on Homebrew](https://speakerdeck.com/anahkiasen/a-storm-homebrewin) which made me migrate a lot to a `Brewfile` and [Mackup](https://github.com/lra/mackup).
-
-In general, I'd like to thank every single one who open-sources their dotfiles for their effort to contribute something to the open-source community. Your work means the world! :earth_africa: :heart:
