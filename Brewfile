@@ -35,6 +35,7 @@ cask 'libreoffice'
 cask 'macpass'
 cask 'scribus'
 cask 'spotify'
+cask 'ubersicht'
 cask 'xquartz'
 # cask 'thunderbird'
 
