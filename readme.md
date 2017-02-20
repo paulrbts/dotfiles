@@ -1,14 +1,9 @@
-# Dries's Dotfiles
-
-## What Is This?
-
-This repository serves as my way to help me setup and maintain my Mac. It takes the effort out of installing everything manually. Everything which is needed to install my preffered setup of macOS is detailed in this readme. Feel free to explore, learn and copy parts for your own dotfiles. Enjoy! :smile:
-
-Read the blog post: https://driesvints.com/blog/getting-started-with-dotfiles
+# How to set up a Mac system from fresh
+Based largely on [Dries Vints' dotfiles repo](https://github.com/driesvints/dotfiles).
 
 ## A Fresh macOS Setup
 
-Follow these install instructions to setup a new Mac.
+Follow these install instructions to setup a brand new Mac.
 
 1. Update macOS to the latest version with the App Store
 2. Install Xcode from the App Store, open it and accept the license agreement
@@ -19,7 +14,7 @@ Follow these install instructions to setup a new Mac.
 7. Run `install.sh` to start the installation
 8. Make sure Dropbox is set up and synced
 9. Restore preferences by running `mackup restore`
-10. Restart your computer to finalize the process
+10. Restart your computer to finalise the process
 
 Your Mac is now ready to use!
 

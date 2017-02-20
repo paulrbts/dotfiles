@@ -1,84 +1,68 @@
 # Taps
 tap 'caskroom/cask'
+tap 'versions'
 tap 'caskroom/fonts'
-tap 'caskroom/versions'
 tap 'homebrew/bundle'
+tap 'homebrew/core'
 tap 'homebrew/dupes'
-tap 'homebrew/php'
+tap 'homebrew/services'
+tap 'scribusproject/scribus'
 
-# Install ZSH
+# Install/update shells
 brew 'zsh'
 brew 'zsh-completions'
-
-# Install GNU core utilities (those that come with macOS are outdated)
-brew 'coreutils'
-
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew 'findutils'
-
-# Install Bash 4
+# Bash 4
 brew 'bash'
 
-# Install more recent versions of some macOS tools
-brew 'homebrew/dupes/grep'
-
-# Install Binaries
-brew 'awscli'
-brew 'git'
-brew 'hub'
-brew 'tree'
-brew 'mackup'
+# Install utilities
 brew 'mas'
-brew 'node'
-brew 'trash'
-brew 'wget'
+brew 'mackup'
+brew 'neofetch'
+brew 'profanity', args: ['with-terminal-notifier']
+brew 'ruby-build'
+brew 'rbenv'
+brew 'smartmontools'
+brew 'speedtest_cli'
+brew 'terminal-notifier'
+brew 'wakeonlan'
 
-# Development
-brew 'php71', args: ['with-debug']
-brew 'php71-intl'
-brew 'mariadb'
-
-# Apps
-cask 'aerial'
-cask 'alfred'
-cask 'caffeine'
-cask 'dropbox'
 cask 'firefox'
+cask 'gimp'
 cask 'google-chrome'
-cask 'google-drive'
+cask 'inkscape'
 cask 'iterm2'
-cask 'mysqlworkbench'
-cask 'phpstorm'
-cask 'quip'
-cask 'sequel-pro'
-cask 'slack'
-cask 'sublime-text'
-cask 'tower'
-cask 'transmit'
-cask 'vagrant'
-cask 'virtualbox'
-cask 'virtualbox-extension-pack'
-cask 'vlc'
-
-# Quicklook
-cask 'qlcolorcode'
-cask 'qlmarkdown'
-cask 'quicklook-json'
-cask 'quicklook-csv'
-cask 'qlstephen'
+cask 'libreoffice'
+cask 'macpass'
+cask 'scribus'
+cask 'spotify'
+cask 'xquartz'
+# cask 'thunderbird'
 
 # Fonts
-cask 'font-sauce-code-powerline'
+cask 'font-averia-libre'
+cask 'font-bungee'
+cask 'font-codystar'
+cask 'font-expletus-sans'
+cask 'font-fira-mono'
+cask 'font-fira-sans'
+cask 'font-hack'
+cask 'font-im-fell-dw-pica'
+cask 'font-linux-biolinum'
+cask 'font-open-sans'
+cask 'font-open-sans-condensed'
+cask 'font-pt-mono'
+cask 'font-pt-sans'
+cask 'font-roboto-condensed'
+cask 'font-share'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
 
-# Install Mac App Store apps
-mas '1Password', id: 443987910
-mas 'Byword', id: 420212497
-mas 'Deckset', id: 847496013
-mas 'Giphy Capture', id: 668208984
-mas 'Paw', id: 584653203
-mas 'Sip', id: 507257563
-mas 'Sketch', id: 402476602
-mas 'Tweetbot', id: 557168941
+# Mac App Store apps
+mas 'Logic Pro X', id: 634148309
+mas 'GarageBand', id: 682658836
+mas 'iMovie', id: 408981434
+mas 'Pages', id: 409201541
+mas 'Keynote', id: 409183694
+mas 'Numbers', id: 409203825
+# mas 'Memory Clean', id: 451444120
+# mas 'Wunderlist', id: 410628904
