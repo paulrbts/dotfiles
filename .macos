@@ -270,6 +270,10 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 # Disable automatic spell checking
 # defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnabled"
 
+# Set default typeface and size
+defaults write com.apple.mail NSFont SourceSansPro-Regular
+defaults write com.apple.mail NSFontsize 12
+
 ###############################################################################
 # Terminal & iTerm 2                                                          #
 ###############################################################################
