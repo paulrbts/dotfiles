@@ -14,9 +14,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Set computer name (as done via System Preferences → Sharing)
 #sudo scutil --set ComputerName "0x6D746873"
-#sudo scutil --set HostName "0x6D746873"
-#sudo scutil --set LocalHostName "0x6D746873"
-#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "0x6D746873"
+sudo scutil --set HostName "ferdasyn"
+sudo scutil --set LocalHostName "ferdasyn"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "ferdasyn"
 
 # Disable transparency in the menu bar and elsewhere
 defaults write com.apple.universalaccess reduceTransparency -bool true
@@ -32,6 +32,20 @@ defaults write com.apple.dock orientation -string left
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock minimize-to-application -bool true
 defaults write com.apple.dock showAppExposeGestureEnabled -bool true
+
+# disable rubberbanding
+  defaults write -g NSScrollViewRubberbanding -int
+
+# show hidden files in Finder
+  defaults write com.apple.finder AppleShowAllFiles TRUE
+
+# disable window animations
+  defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+
+# disable window animations and Mail animations
+  defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+  defaults write com.apple.Mail DisableSendAnimations -bool true
+  defaults write com.apple.Mail DisableReplyAnimations -bool true
 
 # Save to disk (not to iCloud) by default
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
@@ -92,7 +106,7 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 sudo systemsetup -settimezone "Europe/Birmingham" > /dev/null
 
 # Disable auto-correct
-#defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 ###############################################################################
 # Screen                                                                      #
@@ -271,8 +285,8 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 # defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnabled"
 
 # Set default typeface and size
-defaults write com.apple.mail NSFont SourceSansPro-Regular
-defaults write com.apple.mail NSFontsize 12
+defaults write com.apple.mail NSFont SourceCodePro-Regular
+defaults write com.apple.mail NSFontsize 13
 
 ###############################################################################
 # Terminal & iTerm 2                                                          #
@@ -348,7 +362,7 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
     "Dock" "Finder" "Mail" "Messages" "Photos" "Safari" "SystemUIServer" \
-    "Terminal" "Tweetbot" "iCal"; do
+    "Terminal" "iCal"; do
     killall "${app}" &> /dev/null
 done
 
